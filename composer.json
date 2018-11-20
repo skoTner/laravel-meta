@@ -1,0 +1,33 @@
+{
+    "name": "skotner/laravel-meta",
+    "description": "Metatags for all Laravel models.",
+    "license": "MIT",
+    "keywords": ["laravel", "meta"],
+    "authors": [
+        {
+            "name": "Andreas Skotner",
+            "email": "andreas@skotner.net",
+            "homepage": "https://skotner.no",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "laravel/framework": ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Skotner\\Meta\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Skotner\\Meta\\MetaServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0@dev"
+    }
+}
